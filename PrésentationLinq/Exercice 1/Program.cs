@@ -40,7 +40,7 @@ namespace Exercice_1
         public static List<int> FirstList(List<int> list)
         {
             var firsts = (from entier in list
-                          where Premier(entier)
+                          where !Premier(entier)
                           select entier).ToList();
 
             return firsts;
